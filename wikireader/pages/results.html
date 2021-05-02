@@ -1,0 +1,15 @@
+<panel title="Suche">
+    <div class="form-group">
+        <label for="">Suchbegriff</label>
+        <input type="text" ng-model="search">
+    </div>
+    <button ng-click="runSearch(search)" class="btn btn-primary">Suchen</button>
+</panel>
+
+<hr>
+
+<div ng-repeat="result in results">
+   <panel title="{{ result.title }}">
+       <div ng-bind-html="result.extract"></div>
+    </panel>
+</div>

@@ -1,0 +1,11 @@
+<h1>Start.html</h1>
+
+<panel title="Land auswählen">
+    <ul>
+        <li ng-repeat="(key, endpoint) in endpoints">
+            <a href="/#/results/{{ key }}"> 
+                {{ endpoint.title }}
+            </a>
+        </li>
+    </ul>
+</panel>
